@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddPartController">
+   <children>
+      <AnchorPane layoutX="77.0" layoutY="55.0" prefHeight="42.0" prefWidth="289.0" style="-fx-border-width: 1; -fx-border-style: solid;" />
+      <Label fx:id="PartLbl" layoutX="14.0" layoutY="14.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="PartInhouseRadioBtn" layoutX="90.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActionInhouseSelect" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="PartOutsourcedRadioBtn" layoutX="194.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActionOutsourcedSelect" text="Outsourced" toggleGroup="$Group">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="PartIdTxtFld" disable="true" editable="false" layoutX="192.0" layoutY="108.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PartNameTxtFld" layoutX="192.0" layoutY="148.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PartInvTxtFld" layoutX="192.0" layoutY="191.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PartMaxTxtFld" layoutX="117.0" layoutY="277.0" prefHeight="30.0" prefWidth="75.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PartMinTxtFld" layoutX="293.0" layoutY="276.0" prefHeight="30.0" prefWidth="75.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="PartIdLbl" layoutX="80.0" layoutY="115.0" text="ID" />
+      <Label fx:id="PartNameLbl" layoutX="80.0" layoutY="155.0" text="Name" />
+      <Label fx:id="PartInvLbl" layoutX="80.0" layoutY="198.0" text="Inv" />
+      <Label fx:id="PartMaxLbl" layoutX="80.0" layoutY="283.0" text="Max" />
+      <Label fx:id="PartMinLbl" layoutX="264.0" layoutY="283.0" text="Min" />
+      <TextField fx:id="PartTypeTxtFld" layoutX="192.0" layoutY="320.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="PartTypeLbl" layoutX="80.0" layoutY="327.0" text="Type" />
+      <Button fx:id="PartSaveBtn" layoutX="265.0" layoutY="366.0" mnemonicParsing="false" onAction="#onActionSaveAddPart" text="Save" />
+      <Button fx:id="PartCancelBtn" layoutX="314.0" layoutY="366.0" mnemonicParsing="false" onAction="#returnToMainView" text="Cancel" />
+      <TextField fx:id="PartPriceTxtFld" layoutX="192.0" layoutY="230.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="PartPriceLbl" layoutX="78.0" layoutY="237.0" text="Price" />
+   </children>
+</AnchorPane>
